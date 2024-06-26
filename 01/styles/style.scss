@@ -1,0 +1,49 @@
+@use './abstract/reset';
+@use './abstract/variaveis';
+
+body {
+    background-color: variaveis.$cor-bg;
+    color: variaveis.$cor-primaria;
+    font-family: variaveis.$fnt-primaria;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    .mensagem {
+
+        h3 {
+            font-size: 2rem;
+            margin-top: 1rem;
+        }
+
+        span {
+            display: inline-block;
+            border: 1px solid variaveis.$cor-primaria;
+            border-radius: 1rem;
+            padding: 1rem;
+            margin-top: 1rem;
+        }
+        
+        span {
+            font-size: 4rem;
+        }
+
+    }
+
+    input {
+        margin-top: 2rem;
+        padding: .5rem 2rem;
+        background-color: transparent;
+        border: 1px solid variaveis.$cor-primaria;
+        border-radius: 1rem;
+        outline: none;
+        color: variaveis.$cor-primaria;
+    }
+}
